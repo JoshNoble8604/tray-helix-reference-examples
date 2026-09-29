@@ -63,11 +63,17 @@ appear.
 
 ### 0. Import the Tray project
 
-Import `tray/project-export.json` into your workspace (Projects → Import). It
-creates the five workflows and the empty `workflow_run_events` data table. The
-export has no credentials in it: the Slack App and AWS Bedrock steps show as
-needing an authentication, and you attach your own in steps 1 and 2. Script
-steps use placeholder values you set in step 4.
+Import `tray/project-export.json` into a project in your workspace. It creates
+the five workflows, with the calls between them already pointing at each other.
+The export has no credentials in it: the Slack App and AWS Bedrock steps show as
+needing an authentication, and you attach your own in steps 1 and 2.
+
+**Check for the `workflow_run_events` data table.** In a test import the
+workflows arrived but the table did not. If it's missing, create it in the same
+project with 8 text columns: occurred_at, workflow_title, workflow_id, step_name,
+error_message, step_log_url, workflow_url, status. Then point the data table
+steps at it and copy its column IDs into the scripts (both in step 4). The
+workflows read and write columns by ID, not by name.
 
 ### 1. Slack app
 
@@ -116,6 +122,7 @@ the URL immediately, and only a live trigger can answer.
 | Both of those scripts, `TIMEZONE` | Display timezone (the report's schedule is set on its trigger) |
 | `Ops - Daily report` script-1 and `Ops - Ask the agent` script-1, `COLUMNS` | The ledger's column IDs. They change on import; find them in the data table's settings. Records are keyed by ID so that renaming a column doesn't break anything |
 | `Ops - Record failure` data-tables-1 | The same column IDs as each property key |
+| The **Data table** field on `Ops - Record failure` data-tables-1, `Ops - Daily report` data-tables-1 and data-tables-2, and `Ops - Ask the agent` data-tables-1 | Your `workflow_run_events` table. The export still references the original table's ID |
 | `Ops - Ask the agent` aws-bedrock-1 | Model ID, for example `us.anthropic.claude-sonnet-5`. **Don't set Temperature**: current Claude models reject it with "temperature is deprecated for this model" |
 | `Slack - Events` script-1 | Optional `ALLOWED_CHANNELS` |
 
