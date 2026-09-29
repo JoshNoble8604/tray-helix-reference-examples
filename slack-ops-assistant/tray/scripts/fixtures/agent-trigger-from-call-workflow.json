@@ -1,0 +1,12 @@
+{
+  "_source": "Real $.steps.trigger of 'Ops - Ask the agent' when called by 'Slack - Button actions' call-workflow fire_and_forget, 2026-09-28. Note: inputs are FLAT, not under `data` (the build-time validator claims `data`). Slack, Tray and table IDs replaced with neutral placeholders; shapes unchanged.",
+  "payload": {
+    "question": "Explain this failure and suggest a fix. Workflow \"[SAMPLE] Stripe - Post paid invoices to NetSuite\", step \"http-client-1\", at 2026-09-28T21:05:00.000Z. Error: 401 Unauthorized: The API key provided has expired.",
+    "channel": "C0CHANNEL01",
+    "thread_ts": "1790629250.516039",
+    "user": "U0USER00001",
+    "#calling_workflow": "00000000-0000-4000-a000-0000000000f1",
+    "#calling_execution": "00000000-0000-4000-a000-0000000000e1",
+    "#calling_execution_log_url": "https://app.tray.io/workflow/00000000-0000-4000-a000-0000000000f1/logs/00000000"
+  }
+}

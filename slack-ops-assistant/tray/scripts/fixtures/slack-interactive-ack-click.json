@@ -1,0 +1,145 @@
+{
+  "_source": "Real $.steps.trigger of 'Slack - Button actions' (slack_interactive_subscriber) for an Acknowledge click on the daily report, 2026-09-28. Two ledger sections trimmed for length; token, trigger_id and response_url redacted. Slack, Tray and table IDs replaced with neutral placeholders; shapes unchanged.",
+  "payload": {
+    "type": "block_actions",
+    "user": {
+      "id": "U0USER00001",
+      "username": "example.user",
+      "name": "example.user",
+      "team_id": "T0TEAM00001"
+    },
+    "api_app_id": "A0APP000001",
+    "token": "REDACTED",
+    "container": {
+      "type": "message",
+      "message_ts": "1790629343.458959",
+      "channel_id": "C0CHANNEL01",
+      "is_ephemeral": false
+    },
+    "trigger_id": "REDACTED",
+    "team": {
+      "id": "T0TEAM00001",
+      "domain": "example-workspace"
+    },
+    "is_enterprise_install": false,
+    "channel": {
+      "id": "C0CHANNEL01",
+      "name": "ops-alerts"
+    },
+    "message": {
+      "user": "U0BOT000001",
+      "type": "message",
+      "ts": "1790629343.458959",
+      "bot_id": "B0BOT000001",
+      "app_id": "A0APP000001",
+      "text": "Workflow health: 5 failure(s) in the last 24h",
+      "team": "T0TEAM00001",
+      "blocks": [
+        {
+          "type": "header",
+          "block_id": "aaS8A",
+          "text": {
+            "type": "plain_text",
+            "text": "Workflow health - Monday, Sep 28",
+            "emoji": true
+          }
+        },
+        {
+          "type": "section",
+          "block_id": "cWkIP",
+          "fields": [
+            {
+              "type": "mrkdwn",
+              "text": "*Failures (last 24h)*\n5",
+              "verbatim": false
+            },
+            {
+              "type": "mrkdwn",
+              "text": "*Workflows affected*\n4",
+              "verbatim": false
+            }
+          ]
+        },
+        {
+          "type": "divider",
+          "block_id": "FbNAy"
+        },
+        {
+          "type": "section",
+          "block_id": "mXezn",
+          "text": {
+            "type": "mrkdwn",
+            "text": "*[SAMPLE] Stripe - Post paid invoices to NetSuite* - 1 failure <https://app.tray.io/|latest log>\n&gt;401 Unauthorized: The API key provided has expired.",
+            "verbatim": false
+          }
+        },
+        {
+          "type": "actions",
+          "block_id": "ops_report_actions",
+          "elements": [
+            {
+              "type": "button",
+              "action_id": "ops_ask.fix_first",
+              "text": {
+                "type": "plain_text",
+                "text": "What should we fix first?",
+                "emoji": true
+              },
+              "style": "primary",
+              "value": "Looking at the last 24 hours of failures, what should we fix first and why?"
+            },
+            {
+              "type": "button",
+              "action_id": "ops_ask.new_errors",
+              "text": {
+                "type": "plain_text",
+                "text": "Any new errors?",
+                "emoji": true
+              },
+              "value": "Which errors in the last 24 hours are new compared with the rest of the week?"
+            },
+            {
+              "type": "button",
+              "action_id": "ops_ack",
+              "text": {
+                "type": "plain_text",
+                "text": "Acknowledge",
+                "emoji": true
+              },
+              "value": "ack"
+            }
+          ]
+        },
+        {
+          "type": "context",
+          "block_id": "1khTr",
+          "elements": [
+            {
+              "type": "mrkdwn",
+              "text": "Mention me in the thread to ask a question about these runs.",
+              "verbatim": false
+            }
+          ]
+        }
+      ]
+    },
+    "state": {
+      "values": {}
+    },
+    "response_url": "REDACTED",
+    "actions": [
+      {
+        "action_id": "ops_ack",
+        "block_id": "ops_report_actions",
+        "text": {
+          "type": "plain_text",
+          "text": "Acknowledge",
+          "emoji": true
+        },
+        "value": "ack",
+        "type": "button",
+        "action_ts": "1790630531.169876"
+      }
+    ]
+  }
+}

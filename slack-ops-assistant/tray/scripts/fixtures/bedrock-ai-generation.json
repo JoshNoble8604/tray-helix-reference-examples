@@ -1,0 +1,26 @@
+{
+  "_source": "Real output of aws-bedrock ai_generation (us.anthropic.claude-sonnet-5) answering an Explain this click, 2026-09-28. Slack, Tray and table IDs replaced with neutral placeholders; shapes unchanged.",
+  "payload": {
+    "chatResponse": {
+      "output": {
+        "message": {
+          "role": "assistant",
+          "content": [
+            {
+              "text": "The run failed because the API key used by this step had expired, resulting in a 401 Unauthorized response.\n\n- **Workflow:** [SAMPLE] Stripe - Post paid invoices to NetSuite\n- **Step:** http-client-1\n- **Time:** 2026-09-28T21:05:00.000Z\n- **Error:** 401 Unauthorized: The API key provided has expired.\n- **Likely cause:** The API key/credential configured for this HTTP client step has expired and needs renewal.\n- **Next step:** Rotate/regenerate the API key in the relevant service (Stripe or NetSuite, depending on which endpoint this step calls) and update the credential in the Tray connector for this step, then re-run the workflow.\n\nLog: [View step log](https://app.tray.io/)"
+            }
+          ]
+        }
+      },
+      "stopReason": "end_turn",
+      "usage": {
+        "inputTokens": 1121,
+        "outputTokens": 262,
+        "totalTokens": 1383
+      },
+      "metrics": {
+        "latencyMs": 4428
+      }
+    }
+  }
+}

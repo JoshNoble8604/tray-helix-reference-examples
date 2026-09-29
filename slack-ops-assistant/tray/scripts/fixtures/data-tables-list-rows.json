@@ -1,0 +1,81 @@
+{
+  "_source": "Real output of data-tables list_rows with key_response_by_id=true, 2026-09-28. Newest first as returned. Slack, Tray and table IDs replaced with neutral placeholders; shapes unchanged.",
+  "payload": {
+    "elements": [
+      {
+        "datatableId": "00000000-0000-4000-a000-00000000da7a",
+        "id": "5",
+        "properties": {
+          "YNKY8L-VX285X": "2026-09-28T21:05:00.000Z",
+          "NGR4XN-5VJJA6": "[SAMPLE] Stripe - Post paid invoices to NetSuite",
+          "OK8RBE-QG5P3W": "sample-wf-0004",
+          "WWKENW-GDR63P": "http-client-1",
+          "W8LNWK-GXAR2B": "401 Unauthorized: The API key provided has expired.",
+          "OEXK3L-GJRP5P": "https://app.tray.io/",
+          "KRN2AB-QKA4Z5": "https://app.tray.io/",
+          "PO4OZE-2WEQGL": "failed"
+        }
+      },
+      {
+        "datatableId": "00000000-0000-4000-a000-00000000da7a",
+        "id": "4",
+        "properties": {
+          "YNKY8L-VX285X": "2026-09-28T21:02:00.000Z",
+          "NGR4XN-5VJJA6": "[SAMPLE] HubSpot - Sync new contacts to Salesforce",
+          "OK8RBE-QG5P3W": "sample-wf-0003",
+          "WWKENW-GDR63P": "salesforce-2",
+          "W8LNWK-GXAR2B": "DUPLICATE_VALUE: duplicate value found: Email__c duplicates value on record with id: 003Hs00001aBcDe",
+          "OEXK3L-GJRP5P": "https://app.tray.io/",
+          "KRN2AB-QKA4Z5": "https://app.tray.io/",
+          "PO4OZE-2WEQGL": "failed"
+        }
+      },
+      {
+        "datatableId": "00000000-0000-4000-a000-00000000da7a",
+        "id": "3",
+        "properties": {
+          "YNKY8L-VX285X": "2026-09-28T16:12:47.000Z",
+          "NGR4XN-5VJJA6": "[SAMPLE] Zendesk - Nightly ticket export",
+          "OK8RBE-QG5P3W": "sample-wf-0002",
+          "WWKENW-GDR63P": "http-client-2",
+          "W8LNWK-GXAR2B": "429 Too Many Requests: rate limit exceeded, retry after 60s",
+          "OEXK3L-GJRP5P": "https://app.tray.io/",
+          "KRN2AB-QKA4Z5": "https://app.tray.io/",
+          "PO4OZE-2WEQGL": "failed"
+        }
+      },
+      {
+        "datatableId": "00000000-0000-4000-a000-00000000da7a",
+        "id": "2",
+        "properties": {
+          "YNKY8L-VX285X": "2026-09-28T14:40:02.000Z",
+          "NGR4XN-5VJJA6": "[SAMPLE] Salesforce - Sync closed-won to NetSuite",
+          "OK8RBE-QG5P3W": "sample-wf-0001",
+          "WWKENW-GDR63P": "netsuite-1",
+          "W8LNWK-GXAR2B": "INVALID_KEY_OR_REF: Invalid customer reference key 90117 for entity.",
+          "OEXK3L-GJRP5P": "https://app.tray.io/",
+          "KRN2AB-QKA4Z5": "https://app.tray.io/",
+          "PO4OZE-2WEQGL": "failed"
+        }
+      },
+      {
+        "datatableId": "00000000-0000-4000-a000-00000000da7a",
+        "id": "1",
+        "properties": {
+          "YNKY8L-VX285X": "2026-09-28T13:05:11.000Z",
+          "NGR4XN-5VJJA6": "[SAMPLE] Salesforce - Sync closed-won to NetSuite",
+          "OK8RBE-QG5P3W": "sample-wf-0001",
+          "WWKENW-GDR63P": "netsuite-1",
+          "W8LNWK-GXAR2B": "INVALID_KEY_OR_REF: Invalid customer reference key 88213 for entity.",
+          "OEXK3L-GJRP5P": "https://app.tray.io/",
+          "KRN2AB-QKA4Z5": "https://app.tray.io/",
+          "PO4OZE-2WEQGL": "failed"
+        }
+      }
+    ],
+    "pageInfo": {
+      "endCursor": "QnoOm4p8MAAAATE",
+      "hasNextPage": false
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "_source": "Real $.steps.trigger of 'Slack - Events' (slack-app-trigger slack_events_subscriber) for an @mention, 2026-09-28. Token, signature, event_context and forwarding headers redacted. Slack, Tray and table IDs replaced with neutral placeholders; shapes unchanged.",
+  "payload": {
+    "event_data": {
+      "token": "REDACTED",
+      "team_id": "T0TEAM00001",
+      "api_app_id": "A0APP000001",
+      "event": {
+        "type": "app_mention",
+        "user": "U0USER00001",
+        "ts": "1790631085.226699",
+        "client_msg_id": "00000000-0000-4000-a000-0000000000c1",
+        "text": "<@U0BOT000001> what are your capabilities?",
+        "team": "T0TEAM00001",
+        "blocks": [
+          {
+            "type": "rich_text",
+            "block_id": "5OZIr",
+            "elements": [
+              {
+                "type": "rich_text_section",
+                "elements": [
+                  {
+                    "type": "user",
+                    "user_id": "U0BOT000001"
+                  },
+                  {
+                    "type": "text",
+                    "text": " what are your capabilities?"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "channel": "C0CHANNEL01",
+        "event_ts": "1790631085.226699"
+      },
+      "type": "event_callback",
+      "event_id": "Ev0C57HU87GC",
+      "event_time": 1790631085,
+      "authorizations": [
+        {
+          "team_id": "T0TEAM00001",
+          "user_id": "U0BOT000001",
+          "is_bot": true,
+          "is_enterprise_install": false
+        }
+      ],
+      "is_ext_shared_channel": false,
+      "event_context": "REDACTED"
+    },
+    "event_type": "app_mention",
+    "team_id": "T0TEAM00001",
+    "api_app_id": "A0APP000001",
+    "event_id": "Ev0C57HU87GC",
+    "event_time": 1790631085,
+    "webhook_metadata": {
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-Slack-Request-Timestamp": "1790631085",
+        "X-Slack-Signature": "REDACTED"
+      }
+    }
+  }
+}

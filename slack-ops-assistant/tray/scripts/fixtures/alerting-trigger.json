@@ -1,0 +1,17 @@
+{
+  "_source": "NOT a captured production alert. Shaped from the alerting-trigger 1.1 outputSchema (origin.*, error.*) and used for test fires on 2026-09-28. Replace with a real capture: make a workflow fail with 'Ops - Record failure' as its Alerting workflow and copy its trigger output from the log. Slack, Tray and table IDs replaced with neutral placeholders; shapes unchanged.",
+  "payload": {
+    "origin": {
+      "workflow_uuid": "sample-wf-0004",
+      "workflow_url": "https://app.tray.io/",
+      "workflow_title": "[SAMPLE] Stripe - Post paid invoices to NetSuite",
+      "step_name": "http-client-1",
+      "step_log_url": "https://app.tray.io/",
+      "connector": "http-client"
+    },
+    "error": {
+      "message": "401 Unauthorized: The API key provided has expired.",
+      "created": "2026-09-28T21:05:00.000Z"
+    }
+  }
+}
