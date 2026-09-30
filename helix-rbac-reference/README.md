@@ -1,7 +1,8 @@
 # Helix RBAC reference
 
 A small, working reference for role-based access control with tenant isolation
-in a Helix app (`@trayai/helix-sdk` 1.2.0, drizzle-orm, Postgres, zod, React).
+in a Helix app (`@trayai/helix-sdk`, drizzle-orm, Postgres, zod, React). `package.json` pins
+the versions it was tested with; use the current Helix CLI and SDK (kept on matching versions).
 Copy the design, not necessarily the files. The `records` table and endpoints
 are stand-ins for your own tenant data.
 
